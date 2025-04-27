@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The pick-up and drop-off system</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: url('background pic.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.6);
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #00695c;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      gap: 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd54f;
+    }
+
+    .logo-container {
+      position: fixed;
+      top: 5px;
+      right: 20px;
+      z-index: 1001;
+    }
+
+    .logo-container img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .content {
+      margin-top: 60px;
+      padding: 40px;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      color: #004d40;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      margin-bottom: 80px; 
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #004d40;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .centered-text {
+      text-align: center;
+    }
+
+    .centered-text h2,
+    .centered-text p,
+    .centered-text ul {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 15px 0 10px;
+      color: #00796b;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+      width: 100%;
+      position: relative; 
+      margin-top: auto;  
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="Team.html"> The Team </a>
+    <a href="rationale.html"> Title & Rationale</a>
+    <a href="statement.html">SOP & Significance of the STUDY</a>
+    <a href="methodology.html"> Research Methodology</a>
+    <a href="conclusion.html">Recomendations</a>
+    <a href="Keydata.html">Key Data</a>
+  </nav>
+
+  <div class="logo-container">
+    <img src="school logo.jpg" alt="School Logo" style="width:100px">
+  </div>
+
+  <div class="overlay">
+    <div class="content">
+      <h1>THE EFFECTIVENESS OF THE DROP-OFF AND PICK-UP SYSTEM AND ITS IMPACT ON THE ENVIRONMENT OF THE STUDENTS AT FOUNDATION PREPARATORY ACADEMY: A QUANTITATIVE STUDY</h1>
+      <div class="centered-text">
+        <h2>A Research Paper</h2>
+        <p><strong>Presented to</strong><br>
+        The Faculty of Junior High School of Foundation Preparatory Academy<br>
+        Dumaguete City, Philippines</p>
+
+        <p><strong>In Partial Fulfillment of the Requirements in</strong><br>
+        English, Information and Communications Technology, Mathematics, Social Studies:<br>
+        MINI QUANTITATIVE RESEARCH</p>
+
+        <h2>Researchers:</h2>
+        <ul style="list-style: none; padding-left: 0;">
+          <li>Elizabeth M. Baray</li>
+          <li>Heidi Louise Marie F. Carlson</li>
+          <li>Gianne Mae B. Cruz</li>
+          <li>Charles Antony P. Green</li>
+          <li>CJ A. Ijan</li>
+          <li>Weilzenfluh Lazaga</li>
+        </ul>
+
+        <h2>April 2025</h2>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Foundation Preparatory Academy Research Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>
